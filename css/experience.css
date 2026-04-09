@@ -1,0 +1,56 @@
+/* ============================================================
+   EXPERIENCE PAGE (experience.html) — Page-specific styles
+   Shared base styles are in css/style.css
+   ============================================================ */
+
+/* ---- Category Tab Bar ---- */
+/* .filter-bar and .filter-btn are already defined in style.css */
+
+/* ---- Category color accents on cards ---- */
+.card[data-category="production"]  { border-left: 3px solid #2563EB; }
+.card[data-category="competition"] { border-left: 3px solid #7C3AED; }
+.card[data-category="academic"]    { border-left: 3px solid #D97706; }
+.card[data-category="personal"]    { border-left: 3px solid #10B981; }
+.card[data-category="opensource"]  { border-left: 3px solid #EC4899; }
+
+/* ---- Empty state (when no cards match filter) ---- */
+.empty-state {
+  text-align: center;
+  padding: 4rem 1rem;
+  color: var(--text-muted);
+  display: none;
+}
+
+.empty-state i { font-size: 3rem; margin-bottom: 1rem; display: block; color: var(--border); }
+
+/* ---- Card extras specific to experience ---- */
+.card .project-links {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.card .project-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  border: 1px solid var(--border);
+  padding: 0.25rem 0.7rem;
+  border-radius: 6px;
+  transition: all var(--transition);
+}
+
+.card .project-links a:hover {
+  color: var(--primary);
+  border-color: var(--primary);
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 600px) {
+  .filter-bar { gap: 0.35rem; }
+  .filter-btn  { padding: 0.35rem 0.75rem; font-size: 0.8rem; }
+}

@@ -1,0 +1,48 @@
+/* ============================================================
+   AWARDS PAGE (awards.html) — Page-specific styles
+   Shared base styles are in css/style.css
+   ============================================================ */
+
+/* ---- Trophy / medal icon on card ---- */
+.award-card .award-icon {
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+  display: block;
+}
+
+.award-card.gold   .award-icon { color: #F59E0B; }
+.award-card.silver .award-icon { color: #94A3B8; }
+.award-card.bronze .award-icon { color: #D97706; }
+
+/* ---- Competition vs Honor left border ---- */
+.award-card[data-type="competition"] { border-left: 3px solid #D97706; }
+.award-card[data-type="honor"]       { border-left: 3px solid #7C3AED; }
+
+/* ---- Placement badge (e.g. "1st Place") ---- */
+.placement-badge {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 0.2rem 0.65rem;
+  border-radius: 999px;
+  margin-bottom: 0.6rem;
+  color: #fff;
+}
+
+.placement-badge.gold   { background: #F59E0B; }
+.placement-badge.silver { background: #64748B; }
+.placement-badge.bronze { background: #D97706; }
+.placement-badge.honor  { background: #7C3AED; }
+
+.award-card .awarding-body {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-bottom: 0.4rem;
+}
+
+.award-card .award-year {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}

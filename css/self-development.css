@@ -1,0 +1,88 @@
+/* ============================================================
+   SELF-DEVELOPMENT PAGE (self-development.html) — Page-specific styles
+   Shared base styles are in css/style.css
+   ============================================================ */
+
+/* ---- Certification card extras ---- */
+.cert-card .institution {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-bottom: 0.5rem;
+}
+
+.cert-card .year-badge {
+  display: inline-block;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 0.15rem 0.55rem;
+  border-radius: 4px;
+  margin-top: 0.5rem;
+}
+
+.cert-card .credential-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--primary);
+  margin-top: 0.75rem;
+}
+
+.cert-card .credential-link:hover { color: var(--accent); }
+
+/* ---- Workshop card extras ---- */
+.workshop-card .organizer {
+  font-size: 0.8rem;
+  color: var(--accent);
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+}
+
+.workshop-card .date {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  margin-bottom: 0.75rem;
+}
+
+.workshop-card .topics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.75rem;
+}
+
+.workshop-card .topics span {
+  font-size: 0.72rem;
+  background: var(--surface-2);
+  color: var(--text-muted);
+  padding: 0.2rem 0.55rem;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+}
+
+/* ---- Section divider between Certs and Workshops ---- */
+.subsection-label {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.75rem;
+}
+
+.subsection-label h3 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+.subsection-label::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--border);
+}

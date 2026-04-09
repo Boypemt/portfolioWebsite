@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Experience — Mathasith Piboonsilp</title>
+  <meta name="description" content="Professional experience across production, competition, academic, personal, and open source projects." />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@700;800&display=swap" rel="stylesheet" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <!-- Shared CSS -->
+  <link rel="stylesheet" href="../css/style.css" />
+  <!-- Page-specific CSS -->
+  <link rel="stylesheet" href="../css/experience.css" />
+</head>
+<body>
+
+  <!-- ========== PAGE BANNER ========== -->
+  <div class="page-banner" role="status">
+    <i class="fa-solid fa-hourglass-half"></i>
+    <span><strong>Content coming soon</strong> — still gathering my work for this section.</span>
+    <button class="banner-close" aria-label="Dismiss" onclick="this.parentElement.style.display='none'">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+  </div>
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav class="navbar" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="../index.html" class="nav-logo">[<span>MP</span>]</a>
+      <ul class="nav-links" role="list">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="self-development.html">Self-Dev</a></li>
+        <li><a href="awards.html">Awards</a></li>
+        <li><a href="leadership.html">Leadership</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ========== PAGE HERO ========== -->
+  <section class="page-hero">
+    <div class="container">
+      <span class="badge">Portfolio</span>
+      <h1>Professional Experience</h1>
+      <p style="color:var(--text-muted);max-width:520px;margin:0.75rem auto 0;">
+        Projects across five categories — from client work and competitions to personal builds and open source contributions.
+      </p>
+    </div>
+  </section>
+
+  <!-- ========== EXPERIENCE SECTION ========== -->
+  <section class="section">
+    <div class="container">
+
+      <!-- Filter Bar -->
+      <div class="filter-bar" role="group" aria-label="Filter by category">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="production">
+          <i class="fa-solid fa-building"></i> Production
+        </button>
+        <button class="filter-btn" data-filter="competition">
+          <i class="fa-solid fa-ranking-star"></i> Competition
+        </button>
+        <button class="filter-btn" data-filter="academic">
+          <i class="fa-solid fa-graduation-cap"></i> Academic
+        </button>
+        <button class="filter-btn" data-filter="personal">
+          <i class="fa-solid fa-lightbulb"></i> Personal
+        </button>
+        <button class="filter-btn" data-filter="opensource">
+          <i class="fa-brands fa-github"></i> Open Source
+        </button>
+      </div>
+
+      <!-- Cards Grid -->
+      <div class="card-grid" id="exp-grid">
+
+        <!-- =====================
+             1.1 PRODUCTION
+             ===================== -->
+        <article class="card filterable-card" data-category="production">
+          <!-- Replace placeholder with: <img src="../images/[filename].jpg" alt="[Project Name]" class="card-photo" /> -->
+          <div class="card-photo-placeholder" aria-hidden="true"><i class="fa-solid fa-image"></i></div>
+          <span class="card-tag tag-production">Production</span>
+          <h3>[Project Name]</h3>
+          <p class="role"><i class="fa-solid fa-user-tie"></i> [Your Role, e.g. Lead Developer]</p>
+          <p>
+            [Describe the target audience and the problem this project solved — 2 to 3 sentences.
+            Who was the client or organisation? What did you build for them?]
+          </p>
+          <div class="learnings">
+            <h4>Key Learnings</h4>
+            <ul>
+              <li>[Learning 1]</li>
+              <li>[Learning 2]</li>
+              <li>[Learning 3]</li>
+            </ul>
+          </div>
+          <div class="tech-stack">
+            <span>[Tech 1]</span>
+            <span>[Tech 2]</span>
+            <span>[Tech 3]</span>
+          </div>
+          <div class="project-links">
+            <a href="#" target="_blank" rel="noopener">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i> Live
+            </a>
+            <a href="#" target="_blank" rel="noopener">
+              <i class="fa-brands fa-github"></i> Repo
+            </a>
+          </div>
+        </article>
+
+        <!-- Add more Production cards here -->
+
+        <!-- =====================
+             1.2 COMPETITION
+             ===================== -->
+        <article class="card filterable-card" data-category="competition">
+          <!-- Replace placeholder with: <img src="../images/[filename].jpg" alt="[Project Name]" class="card-photo" /> -->
+          <div class="card-photo-placeholder" aria-hidden="true"><i class="fa-solid fa-image"></i></div>
+          <span class="card-tag tag-competition">Competition</span>
+          <h3>[Project / Contest Name]</h3>
+          <p class="role"><i class="fa-solid fa-user-tie"></i> [Your Role, e.g. Team Leader]</p>
+          <p>
+            [Describe the competition and the solution you built — who was it targeting, what problem
+            did it address, and what was the competition format?]
+          </p>
+          <div class="learnings">
+            <h4>Key Learnings</h4>
+            <ul>
+              <li>[Learning 1]</li>
+              <li>[Learning 2]</li>
+              <li>[Learning 3]</li>
+            </ul>
+          </div>
+          <div class="tech-stack">
+            <span>[Tech 1]</span>
+            <span>[Tech 2]</span>
+          </div>
+          <div class="project-links">
+            <a href="#" target="_blank" rel="noopener">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i> Demo
+            </a>
+          </div>
+        </article>
+
+        <!-- Add more Competition cards here -->
+
+        <!-- =====================
+             1.3 ACADEMIC
+             ===================== -->
+        <article class="card filterable-card" data-category="academic">
+          <!-- Replace placeholder with: <img src="../images/[filename].jpg" alt="[Project Name]" class="card-photo" /> -->
+          <div class="card-photo-placeholder" aria-hidden="true"><i class="fa-solid fa-image"></i></div>
+          <span class="card-tag tag-academic">Academic</span>
+          <h3>[Course / Assignment Name]</h3>
+          <p class="role"><i class="fa-solid fa-user-tie"></i> [Your Role, e.g. Developer]</p>
+          <p>
+            [Describe the coursework project — what subject/course was it for, who was the intended
+            user or audience, and what problem or concept did it demonstrate?]
+          </p>
+          <div class="learnings">
+            <h4>Key Learnings</h4>
+            <ul>
+              <li>[Learning 1]</li>
+              <li>[Learning 2]</li>
+              <li>[Learning 3]</li>
+            </ul>
+          </div>
+          <div class="tech-stack">
+            <span>[Tech 1]</span>
+            <span>[Tech 2]</span>
+          </div>
+          <div class="project-links">
+            <a href="#" target="_blank" rel="noopener">
+              <i class="fa-brands fa-github"></i> Repo
+            </a>
+          </div>
+        </article>
+
+        <!-- Add more Academic cards here -->
+
+        <!-- =====================
+             1.4 PERSONAL
+             ===================== -->
+        <article class="card filterable-card" data-category="personal">
+          <!-- Replace placeholder with: <img src="../images/[filename].jpg" alt="[Project Name]" class="card-photo" /> -->
+          <div class="card-photo-placeholder" aria-hidden="true"><i class="fa-solid fa-image"></i></div>
+          <span class="card-tag tag-personal">Personal</span>
+          <h3>[Project Name]</h3>
+          <p class="role"><i class="fa-solid fa-user-tie"></i> [Your Role, e.g. Solo Developer]</p>
+          <p>
+            [Describe your self-initiated project — what motivated you to build it, who does it help,
+            and what problem does it solve?]
+          </p>
+          <div class="learnings">
+            <h4>Key Learnings</h4>
+            <ul>
+              <li>[Learning 1]</li>
+              <li>[Learning 2]</li>
+              <li>[Learning 3]</li>
+            </ul>
+          </div>
+          <div class="tech-stack">
+            <span>[Tech 1]</span>
+            <span>[Tech 2]</span>
+          </div>
+          <div class="project-links">
+            <a href="#" target="_blank" rel="noopener">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i> Live
+            </a>
+            <a href="#" target="_blank" rel="noopener">
+              <i class="fa-brands fa-github"></i> Repo
+            </a>
+          </div>
+        </article>
+
+        <!-- Add more Personal cards here -->
+
+        <!-- =====================
+             1.5 OPEN SOURCE
+             ===================== -->
+        <article class="card filterable-card" data-category="opensource">
+          <!-- Replace placeholder with: <img src="../images/[filename].jpg" alt="[Project Name]" class="card-photo" /> -->
+          <div class="card-photo-placeholder" aria-hidden="true"><i class="fa-solid fa-image"></i></div>
+          <span class="card-tag tag-opensource">Open Source</span>
+          <h3>[Library / Repo Name]</h3>
+          <p class="role"><i class="fa-solid fa-user-tie"></i> [Your Role, e.g. Contributor]</p>
+          <p>
+            [Describe the open source project — what does the library/tool do, who uses it,
+            and what specific contribution did you make?]
+          </p>
+          <div class="learnings">
+            <h4>Key Learnings</h4>
+            <ul>
+              <li>[Learning 1]</li>
+              <li>[Learning 2]</li>
+              <li>[Learning 3]</li>
+            </ul>
+          </div>
+          <div class="tech-stack">
+            <span>[Tech 1]</span>
+            <span>[Tech 2]</span>
+          </div>
+          <div class="project-links">
+            <a href="#" target="_blank" rel="noopener">
+              <i class="fa-brands fa-github"></i> Repo
+            </a>
+          </div>
+        </article>
+
+        <!-- Add more Open Source cards here -->
+
+      </div><!-- /card-grid -->
+
+      <!-- Empty state (shown by JS if no cards match filter) -->
+      <div class="empty-state" id="empty-state" aria-live="polite">
+        <i class="fa-solid fa-folder-open"></i>
+        <p>No projects in this category yet.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-socials">
+        <a href="https://github.com/Boypemt" target="_blank" rel="noopener" aria-label="GitHub">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="[linkedin-url]" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="mailto:maytasit2550@gmail.com" aria-label="Email">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+      </div>
+      <p>Designed &amp; built by <strong>Mathasith Piboonsilp</strong> &mdash; &copy; <span id="year"></span></p>
+    </div>
+  </footer>
+
+  <!-- ========== SCRIPTS ========== -->
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+  <script src="../js/main.js"></script>
+  <script>
+    /* Show/hide empty state when filter returns no visible cards */
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        setTimeout(() => {
+          const visible = [...document.querySelectorAll('.filterable-card')]
+            .filter(c => c.style.display !== 'none');
+          document.getElementById('empty-state').style.display =
+            visible.length === 0 ? 'block' : 'none';
+        }, 0);
+      });
+    });
+  </script>
+</body>
+</html>

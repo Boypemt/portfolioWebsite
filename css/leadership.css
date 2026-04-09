@@ -1,0 +1,79 @@
+/* ============================================================
+   LEADERSHIP PAGE (leadership.html) — Page-specific styles
+   Shared base styles are in css/style.css
+   ============================================================ */
+
+/* ---- Activity card with optional photo ---- */
+.activity-card .event-photo {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: var(--radius-sm);
+  margin-bottom: 1rem;
+}
+
+.activity-card .event-photo-placeholder {
+  width: 100%;
+  height: 180px;
+  background: var(--surface-2);
+  border-radius: var(--radius-sm);
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--border);
+  font-size: 2rem;
+  border: 1px dashed var(--border);
+}
+
+.activity-card .org {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-bottom: 0.25rem;
+}
+
+.activity-card .event-date {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  margin-bottom: 0.75rem;
+}
+
+/* ---- Soft skills section ---- */
+.soft-skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.soft-skill-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.5rem 1.25rem;
+  text-align: center;
+  transition: all var(--transition);
+}
+
+.soft-skill-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-3px);
+}
+
+.soft-skill-card i {
+  font-size: 1.75rem;
+  color: var(--accent);
+  margin-bottom: 0.75rem;
+  display: block;
+}
+
+.soft-skill-card h4 {
+  font-size: 0.95rem;
+  margin-bottom: 0.35rem;
+}
+
+.soft-skill-card p { font-size: 0.8rem; }
+
+/* ---- Role badge (Lead vs Volunteer) ---- */
+.activity-card[data-role="lead"]      { border-left: 3px solid #2563EB; }
+.activity-card[data-role="volunteer"] { border-left: 3px solid #10B981; }
+.activity-card[data-role="organizer"] { border-left: 3px solid #7C3AED; }

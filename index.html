@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mathasith Piboonsilp — Portfolio</title>
+  <meta name="description" content="[Your tagline — one sentence about what you do]" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@700;800&display=swap" rel="stylesheet" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <!-- Shared CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- Page-specific styles -->
+  <link rel="stylesheet" href="css/home.css" />
+</head>
+<body>
+
+  <!-- ========== CONSTRUCTION BANNER ========== -->
+  <div class="construction-banner" role="alert">
+    <i class="fa-solid fa-triangle-exclamation"></i>
+    <span>This portfolio is currently <strong>under construction</strong> — some sections and links are not yet available.</span>
+    <button class="banner-close" aria-label="Dismiss banner" onclick="this.parentElement.style.display='none'">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+  </div>
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav class="navbar" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">[<span>MP</span>]</a>
+      <ul class="nav-links" role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="html/experience.html">Experience</a></li>
+        <li><a href="html/self-development.html">Self-Dev</a></li>
+        <li><a href="html/awards.html">Awards</a></li>
+        <li><a href="html/leadership.html">Leadership</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-inner">
+        <!-- Text side -->
+        <div class="hero-text">
+          <p class="hero-greeting">Hello, I'm Bio</p>
+          <h1>Mathasith Piboonsilp</h1>
+          <p class="hero-role">Developer</p>
+          <p>
+            I build and design software solutions that solve real-world problems. With a passion for technology and a commitment to continuous learning, I strive to create impactful projects that make a difference.
+          </p>
+          <div class="hero-cta">
+            <a href="html/experience.html" class="btn btn-primary">
+              <i class="fa-solid fa-briefcase"></i> View My Work
+            </a>
+            <a href="mailto:maytasit2550@gmail.com" class="btn btn-outline">
+              <i class="fa-solid fa-envelope"></i> Get In Touch
+            </a>
+          </div>
+        </div>
+        <!-- Photo side -->
+        <img src="images/Profile.jpg" alt="Mathasith Piboonsilp" class="hero-photo" />
+      </div>
+    </div>
+    <div class="scroll-hint" aria-hidden="true">
+      <i class="fa-solid fa-chevron-down"></i> scroll
+    </div>
+  </section>
+
+  <!-- ========== QUICK STATS ========== -->
+  <section class="stats" aria-label="Quick stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item reveal">
+          <h3>[N]+</h3>
+          <p>Projects Completed</p>
+        </div>
+        <div class="stat-item reveal">
+          <h3>[N]+</h3>
+          <p>Certifications</p>
+        </div>
+        <div class="stat-item reveal">
+          <h3>[N]+</h3>
+          <p>Awards &amp; Honours</p>
+        </div>
+        <div class="stat-item reveal">
+          <h3>[N]+</h3>
+          <p>Events Led / Joined</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT SNAPSHOT ========== -->
+  <section class="section" aria-labelledby="about-heading">
+    <div class="container">
+      <div class="about-inner">
+        <!-- Left: bio + skills -->
+        <div class="about-text reveal">
+          <h2 id="about-heading">About Me ( กำลังรวบรวมข้อมูลอยู่ครับ น่าจะเสร็จพร้อมกับ CV)</h2>
+          <div class="section-divider" style="margin:0.75rem 0 1.25rem;"></div>
+          <p>
+            [Expand on your background — your major/field of study, how long you've been
+            coding/designing, and any specialisations you have.]
+          </p>
+          <p>
+            [Optional second paragraph — your philosophy, interests outside work, or what
+            makes you unique as a candidate.]
+          </p>
+          <div class="skill-pills">
+            <!-- Replace with your actual skills -->
+            <span class="skill-pill">Python</span>
+            <span class="skill-pill">JavaScript</span>
+            <span class="skill-pill">React</span>
+            <span class="skill-pill">Node.js</span>
+            <span class="skill-pill">SQL</span>
+            <span class="skill-pill">UI/UX Design</span>
+            <span class="skill-pill">Figma</span>
+            <span class="skill-pill">Git</span>
+          </div>
+        </div>
+        <!-- Right: quick-links to socials/CV -->
+        <div class="about-links reveal">
+          <!-- LinkedIn — not ready yet -->
+          <div class="link-wrapper">
+            <a href="#" class="about-link-card disabled" aria-disabled="true" tabindex="-1">
+              <i class="fa-brands fa-linkedin"></i>
+              <div class="link-info">
+                <span>Connect with me</span>
+                <strong>LinkedIn</strong>
+              </div>
+            </a>
+            <span class="coming-soon-badge"><i class="fa-solid fa-clock"></i> Coming Soon</span>
+          </div>
+
+          <!-- GitHub — ready -->
+          <a href="https://github.com/Boypemt" target="_blank" rel="noopener" class="about-link-card">
+            <i class="fa-brands fa-github"></i>
+            <div class="link-info">
+              <span>Browse my code</span>
+              <strong>GitHub</strong>
+            </div>
+            <i class="fa-solid fa-arrow-right" style="margin-left:auto;color:var(--text-muted);font-size:0.85rem;"></i>
+          </a>
+
+          <!-- CV — not ready yet -->
+          <div class="link-wrapper">
+            <a href="#" class="about-link-card disabled" aria-disabled="true" tabindex="-1">
+              <i class="fa-solid fa-file-pdf"></i>
+              <div class="link-info">
+                <span>Download my</span>
+                <strong>CV / Résumé</strong>
+              </div>
+            </a>
+            <span class="coming-soon-badge"><i class="fa-solid fa-clock"></i> Coming Soon</span>
+          </div>
+          <a href="mailto:maytasit2550@gmail.com" class="about-link-card">
+            <i class="fa-solid fa-envelope"></i>
+            <div class="link-info">
+              <span>Send me an email</span>
+              <strong>maytasit2550@gmail.com</strong>
+            </div>
+            <i class="fa-solid fa-arrow-right" style="margin-left:auto;color:var(--text-muted);font-size:0.85rem;"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PORTFOLIO SECTIONS PREVIEW ========== -->
+  <section class="section" style="background:var(--surface);border-top:1px solid var(--border);border-bottom:1px solid var(--border);" aria-labelledby="sections-heading">
+    <div class="container">
+      <h2 class="section-title" id="sections-heading">Explore My Portfolio</h2>
+      <div class="section-divider"></div>
+      <p class="section-subtitle">Navigate through each section to see the full picture.</p>
+
+      <div class="preview-grid">
+        <a href="html/experience.html" class="preview-card">
+          <i class="fa-solid fa-briefcase" style="color:var(--primary);"></i>
+          <h3>Professional Experience</h3>
+          <p>Production, Competition, Academic, Personal &amp; Open Source projects.</p>
+        </a>
+        <a href="html/self-development.html" class="preview-card">
+          <i class="fa-solid fa-graduation-cap" style="color:var(--accent);"></i>
+          <h3>Self-Development</h3>
+          <p>Certifications, online courses, workshops &amp; industry seminars.</p>
+        </a>
+        <a href="html/awards.html" class="preview-card">
+          <i class="fa-solid fa-trophy" style="color:#D97706;"></i>
+          <h3>Awards &amp; Achievements</h3>
+          <p>Hackathons, business cases, university honours &amp; scholarships.</p>
+        </a>
+        <a href="html/leadership.html" class="preview-card">
+          <i class="fa-solid fa-people-group" style="color:#7C3AED;"></i>
+          <h3>Leadership &amp; Volunteer</h3>
+          <p>Events led, volunteer roles &amp; soft skills developed.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-socials">
+        <a href="https://github.com/Boypemt" target="_blank" rel="noopener" aria-label="GitHub">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="[linkedin-url]" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="mailto:maytasit2550@gmail.com" aria-label="Email">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+      </div>
+      <p>Designed &amp; built by <strong>Mathasith Piboonsilp</strong> &mdash; &copy; <span id="year"></span></p>
+    </div>
+  </footer>
+
+  <!-- ========== SCRIPTS ========== -->
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+  <script src="js/main.js"></script>
+</body>
+</html>
